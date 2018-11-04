@@ -20,3 +20,12 @@ All work configuration settings in one place for easy restorations!
     13. Connection->SSH->X11->Enable X11 forwarding
     14. Connection->SSH->X11->X display location = DISPLAY:0:0
 4. Run the colors reg file to set all putty colors to github theme
+5. Pull bash-it from https://github.com/Bash-it/bash-it and
+    1. Put contents into `${HOME}/.bash` directory
+    2. Copy template rc file under https://github.com/Bash-it/bash-it/blob/master/template/bash_profile.template.bash to `${HOME}/.bashrc`
+    3. Change `BASH_IT` variable to contain `${HOME}/.bash` path
+    3. Change the `BASH_IT_THEME` variable to puttygithub
+    4. Copy the puttygithub theme file in this repo into `${HOME}/.bash/custom/themes/puttygithub` path (create the dir path for it)
+6. Copy custom.aliases.bash into `${HOME}/.bash/aliases/` 
+7. Copy custom.plugins.bash into `${HOME}/.bash/plugins/`
+8. Enable dirs plugin to help navigate faster (`bash-it enable plugin dirs`)
